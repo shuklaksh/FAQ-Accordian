@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --Softred: hsl(14, 88%, 65%);
+    --Softviolet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+    --Verydarkgrayishblue: hsl(237, 12%, 33%);
+    --Darkgrayishblue: hsl(240, 6%, 50%);
+    --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+.divider{
+    border: 1px solid var(--Lightgrayishblue);
+    margin-bottom: 1.5em;
+}
+.question {
+    color: var(--Verydarkgrayishblue);
+}
+.question:hover{
+    color: var(--Softred)
+}
+
+body{
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+    background-image: linear-gradient(var(--Softviolet),var(--Softblue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1.5em;
+    height: 60%;
+    width: 70%;
+    padding-bottom: 5em;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+#bg-dekstop{
+    position: absolute;
+    bottom: 3em;
+    width: 60%;
+    right : 65em
+}
+#illustration {
+    position: absolute;
+    bottom: 16em;
+    right: 65em;
+    width: 42%;
+    height: 50%;
+}
+#box-illustration {
+    width: 20%;
+    height: 26%;
+    position: absolute;
+    right: 82%;
+    top: 45%;
+}
+.text{
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 0.3em;
+    margin-left: 40em;
+    margin-right: 5em;
+}
+.text h1 {
+    font-size: 30px;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow {
+    margin-left: 15em; 
+    transform: rotate(0deg);
+    transition: 0.5s;  
+}
+.answer{
+    display: none;
+    padding-right: 10em;
+    color: var(--Darkgrayishblue);    
+}
+
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.attribution { 
+    color: white;
+    margin-top: 10px;
+    font-size: 12px; 
+    text-align: center; 
+}
+ .attribution a { 
+   color: black; 
+}
